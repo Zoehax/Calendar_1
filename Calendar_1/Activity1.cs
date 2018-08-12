@@ -33,7 +33,7 @@ namespace Calendar_1
             calendarView.DateChange += (s, e) =>
             {
                 int day = e.DayOfMonth;
-                int month = e.Month;
+                int month = e.Month+1;
                 int year = e.Year;
                 txtDisplay.Text = "Date: " + day + " / " + month + " / " + year;
 
