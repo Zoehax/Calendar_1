@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="171.5dp"
+        android:id="@+id/frameLayout1">
+        <TextView
+            android:text="A Calender"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_light" />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="204.0dp"
+        android:id="@+id/linearLayout1">
+        <AbsoluteLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="60.0dp"
+            android:id="@+id/absoluteLayout1" />
+        <TextView
+            android:text="By: XU HAN"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="40.5dp"
+            android:id="@+id/textView2"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:text="ID: 217196947"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="44.0dp"
+            android:id="@+id/textView3"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+    <Button
+        android:text="Start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStart"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_blue_dark" />
+    <AbsoluteLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="26.5dp"
+        android:id="@+id/absoluteLayout2" />
+    <Button
+        android:text="Close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClose"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_red_dark" />
+</LinearLayout>

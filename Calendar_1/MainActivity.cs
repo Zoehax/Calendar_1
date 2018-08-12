@@ -1,8 +1,8 @@
 ﻿using Android.App;
-using Android.Widget;
+using Android.Content;
 using Android.OS;
 using Android.Support.V7.App;
-using Android.Content;
+using Android.Widget;
 
 namespace Calendar_1
 {
@@ -13,32 +13,23 @@ namespace Calendar_1
         {
             base.OnCreate(savedInstanceState);
 
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.activity_main);
+            // Create your application here
+            SetContentView(Resource.Layout.face);
 
-            var calendarView = FindViewById<CalendarView>(Resource.Id.calendarView);
-            var txtDisplay = FindViewById<TextView>(Resource.Id.txtDisplay);
-
-            txtDisplay.Text = "Date: ";
-
-            calendarView.DateChange += (s, e) =>
+            var btnStart = FindViewById<Button>(Resource.Id.btnStart);
+            btnStart.Click += (s, e) =>
             {
-                int day = e.DayOfMonth;
-                int month = e.Month;
-                int year = e.Year;
-                txtDisplay.Text = "Date: " + day + " / " + month + " / " + year;
-
-            };
-
-            var btnJump = FindViewById<Button>(Resource.Id.btnJump);
-            btnJump.Click += (s, e) =>
-            {
-                Intent nextActity_0 = new Intent(this, typeof(Activity_mid));
+                Intent nextActity_0 = new Intent(this, typeof(Activity1));
                 StartActivity(nextActity_0);
             };
 
-            
+            var btnClose = FindViewById<Button>(Resource.Id.btnClose);
+
+            btnClose.Click += delegate
+            {
+                this.Finish();
+            };
+
         }
     }
 }
-

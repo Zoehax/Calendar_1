@@ -22,9 +22,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtDisplay" />
+    <AbsoluteLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="15.5dp"
+        android:id="@+id/absoluteLayout1" />
     <Button
         android:text="Edit Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnJump" />
+        android:id="@+id/btnJump"
+        android:background="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:textSize="40px" />
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBtF"
+        android:background="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:textSize="40px" />
 </LinearLayout>
