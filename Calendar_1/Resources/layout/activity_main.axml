@@ -26,6 +26,12 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/absoluteLayout3" />
+    <AbsoluteLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
         android:layout_height="15.5dp"
         android:id="@+id/absoluteLayout1" />
     <Button
@@ -36,8 +42,14 @@
         android:background="@android:color/holo_blue_dark"
         android:textStyle="bold"
         android:textSize="40px" />
+    <AbsoluteLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="11.5dp"
+        android:id="@+id/absoluteLayout2" />
     <Button
-        android:text="Button"
+        android:text="Go Back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnBtF"
