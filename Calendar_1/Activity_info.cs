@@ -23,6 +23,7 @@ namespace Calendar_1
             var txtName = FindViewById<TextView>(Resource.Id.txtName);
             var txtEmail = FindViewById<TextView>(Resource.Id.txtEmail);
             var txtBack = FindViewById<Button>(Resource.Id.btnBack);
+      
 
             txtName.Text = name;
             txtEmail.Text = email;
